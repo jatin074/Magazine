@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forth Magazine</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Source+Serif+4:wght@400;500&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<style>
+    :root {
+        --bg: #fbf6ee;
+        --text: #2e2e2e;
+        --muted: #7a7a7a;
+        --accent: #c49a3a;
+        --ink: #2b2118;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Source Serif 4", serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.7;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .site-header {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        font-family: "Playfair Display", serif;
+        font-size: 28px;
+        color: var(--ink);
+    }
+
+    .nav a {
+        margin-left: 24px;
+        font-family: Inter, sans-serif;
+        font-size: 14px;
+        color: var(--muted);
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 24px;
+    }
+
+    .hero {
+        display: grid;
+        grid-template-columns: 2.5fr 1fr;
+        gap: 48px;
+        margin-bottom: 80px;
+    }
+
+    .hero-article img {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .hero-article h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 36px;
+        margin-bottom: 12px;
+    }
+
+    .meta {
+        font-family: Inter, sans-serif;
+        font-size: 13px;
+        color: var(--muted);
+        margin-bottom: 16px;
+    }
+
+    .excerpt {
+        font-size: 18px;
+    }
+
+    .sidebar h3 {
+        font-family: Inter, sans-serif;
+        font-size: 14px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+        color: var(--accent);
+    }
+
+    .sidebar ul li {
+        margin-bottom: 20px;
+    }
+
+    .book-title {
+        display: block;
+        font-weight: 500;
+    }
+
+    .book-author {
+        font-size: 14px;
+        color: var(--muted);
+    }
+
+    .categories {
+        margin-bottom: 80px;
+    }
+
+    .categories h3 {
+        font-family: Inter, sans-serif;
+        font-size: 14px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+        color: var(--accent);
+    }
+
+    .category-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+
+    .category {
+        background: #fff;
+        padding: 32px;
+        text-align: center;
+        font-family: "Playfair Display", serif;
+    }
+
+    .featured {
+        background: #fff;
+        padding: 64px;
+        margin-bottom: 100px;
+    }
+
+    .featured .label {
+        font-family: Inter, sans-serif;
+        font-size: 13px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--accent);
+    }
+
+    .featured h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 32px;
+        margin: 16px 0;
+    }
+
+    .read-more {
+        display: inline-block;
+        margin-top: 24px;
+        font-family: Inter, sans-serif;
+        font-size: 14px;
+        color: var(--accent);
+    }
+
+    .site-footer {
+        text-align: center;
+        padding: 40px 0;
+        font-size: 14px;
+        color: var(--muted);
+    }
+</style>
+
+<body>
+
+    <header class="site-header">
+        <h1 class="logo">Forth Magazine</h1>
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#">Recommendations</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <!-- Hero Article -->
+        <section class="hero">
+            <article class="hero-article">
+                <img src="./library.jpg" alt="Library Image" />
+                <h2>The Best Books on Bengali Literature</h2>
+                <p class="meta">By Humayun Ahmed · 6 min read</p>
+                <p class="excerpt">
+                    Humayun Ahmed was a towering figure in Bengali literature, celebrated for his
+                    storytelling prowess across novels, short stories, and plays.
+                </p>
+            </article>
+
+            <aside class="sidebar">
+                <h3>New Recommendations</h3>
+                <ul>
+                    <li>
+                        <span class="book-title">Misir Ali Unsolved Mysteries</span>
+                        <span class="book-author">Humayun Ahmed</span>
+                    </li>
+                    <li>
+                        <span class="book-title">Jochona O Jononir Golpo</span>
+                        <span class="book-author">Humayun Ahmed</span>
+                    </li>
+                    <li>
+                        <span class="book-title">Debi</span>
+                        <span class="book-author">Humayun Ahmed</span>
+                    </li>
+                </ul>
+            </aside>
+        </section>
+
+        <!-- Categories -->
+        <section class="categories">
+            <h3>Browsing Categories</h3>
+            <div class="category-grid">
+                <div class="category">Fiction</div>
+                <div class="category">History</div>
+                <div class="category">Science</div>
+                <div class="category">Biography</div>
+                <div class="category">Fantasy</div>
+                <div class="category">Thriller</div>
+            </div>
+        </section>
+
+        <!-- Featured -->
+        <section class="featured">
+            <span class="label">Featured Interview</span>
+            <h2>Unveiling the Layers: Deconstructing Symbolism in Modern Literature</h2>
+            <p>
+                We delve deep into the craft of modern storytelling, uncovering how authors
+                weave symbolism into contemporary narratives.
+            </p>
+            <a class="read-more" href="#">Read Full Article</a>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2025 Forth Magazine. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
